@@ -13759,7 +13759,12 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The method below applies the <code>review_to_words</code> method to each of the reviews in the training and testing datasets. In addition it caches the results. This is because performing this processing step can take a long time. This way if you are unable to complete the notebook in the current session, you can come back without needing to process the data a second time.</p>
+<p>review_to_words does the followings in addtion to mentions in the question</p>
+<p>Convert all uppercase characters to thier lowercases.
+Replace non-alphanumeric characters with a space or " "
+Split the string into words
+Remove stopwords, such as "the", "a", "an", "in", etc.
+The method below applies the review_to_words method to each of the reviews in the training and testing datasets. In addition it caches the results. This is because performing this processing step can take a long time. This way if you are unable to complete the notebook in the current session, you can come back without needing to process the data a second time.</p>
 
 </div>
 </div>
